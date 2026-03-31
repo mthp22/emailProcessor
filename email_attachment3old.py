@@ -26,14 +26,11 @@ load_dotenv()
 
 mimetypes.init()
 
-# --- SUPABASE CONFIG ---
 
-#SUPABASE_ANON_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyAgCiAgICAicm9sZSI6ICJhbm9uIiwKICAgICJpc3MiOiAic3VwYWJhc2UtZGVtbyIsCiAgICAiaWF0IjogMTY0MTc2OTIwMCwKICAgICJleHAiOiAxNzk5NTM1NjAwCn0.dc_X5iR_VP_qT0zsiyj_I_OZ2T9FtRU2BBNWN8Bu4GE"
 # --- SUPABASE CONFIG ---
 SUPABASE_URL = os.getenv('SUPABASE_URL', 'http://127.0.0.1:54321')
-SUPABASE_SERVICE_KEY = os.getenv('SUPABASE_SERVICE_KEY', "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImV4cCI6MTk4MzgxMjk5Nn0.EGIM96RAZx35lJzdJsyH-qQwv8Hdp7fsn3W0YpN81IU")
+SUPABASE_SERVICE_KEY = os.getenv('SUPABASE_SERVICE_KEY')
 
-#---SUPABASE_SERVICE_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFxbmVyeHliYnNsdmdjb2pzZWhyIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc2MTAwNzk4NiwiZXhwIjoyMDc2NTgzOTg2fQ.3sFEuxM-aZ6dJ9RQiIgZGAZqUkgYWcbzm2hPUy6MOyY"
 BUCKET_NAME = "bestmed"               # Single bucket
 INPUT_FOLDER = "Emails"                # Starting folder inside bucket
 OUTPUT_FOLDER = "email_attachments"   # New folder inside same bucket
